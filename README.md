@@ -66,3 +66,7 @@ Common password
 Password fjdslkjflkd     false
 Password qwerty          true
 ```
+
+## On Go Playground
+
+[Try here](https://play.golang.org/p/bRyHXodyT3G)
