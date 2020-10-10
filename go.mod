@@ -1,4 +1,4 @@
-module github.com/Frontware/pwd
+module github.com/frontware/pwd
 
 go 1.15
 
