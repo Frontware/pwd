@@ -23,7 +23,7 @@ func init() {
 
 // IsCommon returns true if the password is in the list of most common passwords.
 func IsCommon(pwd string) bool {
-	h = fnv.New64()
+	h := fnv.New64()
 	h.Write([]byte(pwd))
 
 	return bf.Contains(h)
