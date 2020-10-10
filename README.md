@@ -25,7 +25,9 @@ Returns a new password.
 
 > go get github.com/frontware/pwd
 
-# Examples
+# Example
+
+## Sample code
 
 ```golang
 package main
@@ -53,4 +55,15 @@ func main() {
 
 }
 
+```
+
+## Results
+
+```
+Password                 5EZoCLds
+Hash                     $2a$10$yoijtlT0xosZcTd.XWOLUe04zUiNrJj1TAZZSAxJC1zQX/lL.yrhG
+Common password
+
+Password fjdslkjflkd     false
+Password qwerty          true
 ```
