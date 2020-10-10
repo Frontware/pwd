@@ -15,8 +15,9 @@ func main() {
 
 	fmt.Println("Password\t\t", pass)
 	fmt.Println("Hash\t\t\t", hash)
-
-	fmt.Println("Common password")
+	fmt.Println()
+	fmt.Println()
+	fmt.Println("Common passwords")
 	fmt.Println()
 	fmt.Println("Password fjdslkjflkd\t", pwd.IsCommon("fjdslkjflkd"))
 	fmt.Println("Password qwerty\t\t", pwd.IsCommon("qwerty"))
