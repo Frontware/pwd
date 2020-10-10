@@ -13,10 +13,7 @@ import (
 
 //go:generate $GOPATH/bin/go-bindata -prefix "/tmp/" -nomemcopy -nometadata -nocompress -pkg pwd /tmp/pwd.bf.gz
 
-var (
-	bf *bloomfilter.Filter
-	h  = fnv.New64()
-)
+var bf *bloomfilter.Filter
 
 func init() {
 	data, _ := pwdBfGzBytes()
@@ -26,7 +23,7 @@ func init() {
 
 // IsCommon returns true if the password is in the list of most common passwords.
 func IsCommon(pwd string) bool {
-
+	h = fnv.New64()
 	h.Write([]byte(pwd))
 
 	return bf.Contains(h)
