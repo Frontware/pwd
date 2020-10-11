@@ -23,7 +23,7 @@ The function uses **Bloomfilter** to keep a low memory use.
 
 The list of common passwords comes from https://github.com/danielmiessler/SecLists.
 
-[Available here](https://raw.githubusercontent.com/danielmiessler/SecLists/master/Passwords/Common-Credentials/10-million-password-list-top-1000000.txt)
+[Get the list of million passwords here](https://raw.githubusercontent.com/danielmiessler/SecLists/master/Passwords/Common-Credentials/10-million-password-list-top-1000000.txt)
 
 ## HashPassword
 
