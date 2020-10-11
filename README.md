@@ -79,7 +79,7 @@ func main() {
 }
 ```
 
-[Try it on Go playground](https://play.golang.org/p/bRyHXodyT3G)
+[![Try it on Go playground](https://godoc.org/github.com/Frontware/promptpay?status.svg)](https://play.golang.org/p/bRyHXodyT3G)
 
 ## Results
 
@@ -97,4 +97,9 @@ Password qwerty          true
 
 # Doc
 
-[Go package doc is here](https://pkg.go.dev/github.com/frontware/pwd)
+See the doc online
+
+[![PkgGoDev](https://pkg.go.dev/badge/github.com/frontware/pwd)](https://pkg.go.dev/github.com/frontware/pwd)
+
+-----------------------------------------------
+<sup>© 2020 Frontware International. All Rights Reserved.</sup>
