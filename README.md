@@ -79,6 +79,8 @@ func main() {
 }
 ```
 
+[Try it on Go playground](https://play.golang.org/p/bRyHXodyT3G)
+
 ## Results
 
 ```
@@ -90,9 +92,6 @@ Password fjdslkjflkd     false
 Password qwerty          true
 ```
 
-## On Go Playground
-
-[Try sample code here](https://play.golang.org/p/bRyHXodyT3G)
 
 - - -
 
