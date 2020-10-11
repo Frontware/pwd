@@ -1,6 +1,10 @@
-# pwd
+# Introduction
+
 Golang libraries to manage password functions
 
+We use these fucntions in several projects at [Frontware](https://frontware.com) to handle passwords.
+
+- - -
 
 # Functions
 
@@ -11,6 +15,8 @@ When a user signs up, you can use this function to make sure he is not providing
 
 The function uses **Bloomfilter** to keep a low memory use.
 
+The list of common passwords comes from https://github.com/danielmiessler/SecLists. [Available here](https://raw.githubusercontent.com/danielmiessler/SecLists/master/Passwords/Common-Credentials/10-million-password-list-top-1000000.txt)
+
 ## HashPassword
 
 Returns a bcrypt hash of the password
@@ -20,10 +26,17 @@ Returns a bcrypt hash of the password
 
 Returns a new password.
 
+- - -
 
 # Install
 
+If you use module just import ```github.com/frontware/pwd``` in your code
+
+Else you run:
+
 > go get github.com/frontware/pwd
+
+- - -
 
 # Example
 
@@ -71,6 +84,8 @@ Password qwerty          true
 
 [Try here](https://play.golang.org/p/bRyHXodyT3G)
 
-## Doc
+- - -
+
+# Doc
 
 [Go package doc is here](https://pkg.go.dev/github.com/frontware/pwd)
