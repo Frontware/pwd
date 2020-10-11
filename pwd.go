@@ -45,8 +45,11 @@ func HashPassword(pwd string) (string, error) {
 // We removed 1 and I to avoid confusion, sometimes they are very similar on the phone
 var stdChars = []byte("ABCDEFGHJKLMNPQRSTUVWXYZabcdefghjkmnopqrstuvwxyz23456789")
 
-// NewPassword returns a new password
+// NewPassword returns a new password. Minimum length is 5
 func NewPassword(length int) string {
+	if length < 5 {
+		length = 5
+	}
 	return randChar(length, stdChars)
 }
 
