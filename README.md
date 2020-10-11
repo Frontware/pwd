@@ -70,3 +70,7 @@ Password qwerty          true
 ## On Go Playground
 
 [Try here](https://play.golang.org/p/bRyHXodyT3G)
+
+## Doc
+
+[Go package doc is here](https://pkg.go.dev/github.com/frontware/pwd)
