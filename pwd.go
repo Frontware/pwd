@@ -25,6 +25,7 @@ func init() {
 }
 
 // IsCommon returns true if the password is in the list of most common passwords.
+// We use bloomfilter with a list of 1 million common passwords.
 //  IsCommon("qwerty") // returns true
 //  IsCommon("password") // returns true
 //  IsCommon("jkljfd5675fhgf6567H=") // returns false

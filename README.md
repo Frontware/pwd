@@ -1,8 +1,14 @@
+<img src="https://www.frontware.com/images/img/fw-logo.png" alt="Frontware" width="120"/>
+
 # Introduction
+
+
 
 Golang libraries to manage password functions
 
-We use these fucntions in several projects at [Frontware](https://frontware.com) to handle passwords.
+We use these functions in several projects at [Frontware](https://frontware.com) to handle passwords.
+
+
 
 - - -
 
@@ -15,16 +21,20 @@ When a user signs up, you can use this function to make sure he is not providing
 
 The function uses **Bloomfilter** to keep a low memory use.
 
-The list of common passwords comes from https://github.com/danielmiessler/SecLists. [Available here](https://raw.githubusercontent.com/danielmiessler/SecLists/master/Passwords/Common-Credentials/10-million-password-list-top-1000000.txt)
+The list of common passwords comes from https://github.com/danielmiessler/SecLists.
+
+[Available here](https://raw.githubusercontent.com/danielmiessler/SecLists/master/Passwords/Common-Credentials/10-million-password-list-top-1000000.txt)
 
 ## HashPassword
 
-Returns a bcrypt hash of the password
+Returns a **bcrypt** hash of the password as a string.
 
 
 ## NewPassword
 
-Returns a new password.
+Returns a new random password.
+
+It's never a good idea to let user set their own password. This functions generates a random password for your user.
 
 - - -
 
@@ -82,7 +92,7 @@ Password qwerty          true
 
 ## On Go Playground
 
-[Try here](https://play.golang.org/p/bRyHXodyT3G)
+[Try sample code here](https://play.golang.org/p/bRyHXodyT3G)
 
 - - -
 
