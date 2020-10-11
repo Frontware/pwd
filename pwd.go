@@ -1,3 +1,6 @@
+// Copyright Frontware International
+// This package is used by several Frontware project to handle basic tasks about passwords
+
 package pwd
 
 import (
@@ -22,6 +25,9 @@ func init() {
 }
 
 // IsCommon returns true if the password is in the list of most common passwords.
+//  IsCommon("qwerty") // returns true
+//  IsCommon("password") // returns true
+//  IsCommon("jkljfd5675fhgf6567H=") // returns false
 func IsCommon(pwd string) bool {
 	h := fnv.New64()
 	h.Write([]byte(pwd))
@@ -46,6 +52,8 @@ func HashPassword(pwd string) (string, error) {
 var stdChars = []byte("ABCDEFGHJKLMNPQRSTUVWXYZabcdefghjkmnopqrstuvwxyz23456789")
 
 // NewPassword returns a new password. Minimum length is 5
+//  NewPassword(4) // returns a random password of 5 chars
+//  NewPassword(8) // returns a random password of 8 chars
 func NewPassword(length int) string {
 	if length < 5 {
 		length = 5
