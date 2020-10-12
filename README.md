@@ -79,7 +79,7 @@ func main() {
 }
 ```
 
-[![Try it on Go playground](https://godoc.org/github.com/Frontware/promptpay?status.svg)](https://play.golang.org/p/bRyHXodyT3G)
+[![Try it on Go playground](https://img.shields.io/static/v1?label=Golang&message=Playground&color=blue)](https://play.golang.org/p/bRyHXodyT3G)
 
 ## Results
 
