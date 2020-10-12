@@ -4,7 +4,7 @@
 
 
 
-Golang libraries to manage password functions
+Golang library to manage password functions
 
 We use these functions in several projects at [Frontware](https://frontware.com) to handle passwords.
 
