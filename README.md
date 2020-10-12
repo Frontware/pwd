@@ -19,7 +19,7 @@ We use these functions in several projects at [Frontware](https://frontware.com)
 The function retruns trye if the password is in the list of 1 million most used password.
 When a user signs up, you can use this function to make sure he is not providing a password that we can easily find in dicitonaries.
 
-The function uses **Bloomfilter** to keep a low memory use.
+The function uses [**Bloomfilter**](https://en.wikipedia.org/wiki/Bloom_filter#:~:text=A%20Bloom%20filter%20is%20a,a%20member%20of%20a%20set.) to keep a low memory use.
 
 The list of common passwords comes from https://github.com/danielmiessler/SecLists.
 
