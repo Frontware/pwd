@@ -1,4 +1,4 @@
-<img src="https://www.frontware.com/images/img/fw-logo.png" alt="Frontware" width="100"/>
+[<img src="https://www.frontware.com/images/img/fw-logo.png" alt="Frontware" width="100"/>](https://frontware.com)
 
 # Introduction
 
@@ -80,7 +80,7 @@ func main() {
 }
 ```
 
-[![Try it on Go playground](https://img.shields.io/static/v1?label=Golang&message=Playground&color=blue)](https://play.golang.org/p/bRyHXodyT3G)
+[![Try it on Go playground](https://img.shields.io/static/v1?label=Golang&message=Playground&color=blue)](https://play.golang.org/p/X90TNOReDak)
 
 ## Results
 
