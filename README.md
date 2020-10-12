@@ -1,4 +1,4 @@
-<img src="https://www.frontware.com/images/img/fw-logo.png" alt="Frontware" width="120"/>
+<img src="https://www.frontware.com/images/img/fw-logo.png" alt="Frontware" width="100"/>
 
 # Introduction
 
@@ -28,6 +28,7 @@ Get the list of million passwords [here](https://raw.githubusercontent.com/danie
 ## HashPassword
 
 Returns a **bcrypt** hash of the password as a string.
+Never store a password, always store the **bcrypt** hash to later identify a user.
 
 
 ## NewPassword
