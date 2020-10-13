@@ -8,7 +8,7 @@ Golang library to manage password functions
 
 We use these functions in several projects at [Frontware](https://frontware.com) to handle passwords.
 
-[![Frontware](https://img.shields.io/badge/Developed%20by-Frontware-yellowgreen.svg)](https://www.frontware.com)
+[![Frontware](https://img.shields.io/badge/Developed%20by-Frontware-yellowgreen.svg)](https://www.frontware.com) [![Go Report Card](https://goreportcard.com/badge/github.com/frontware/pwd)](https://goreportcard.com/report/github.com/frontware/pwd)
 
 - - -
 
