@@ -103,4 +103,4 @@ See the doc online
 [![PkgGoDev](https://pkg.go.dev/badge/github.com/frontware/pwd)](https://pkg.go.dev/github.com/frontware/pwd)
 
 -----------------------------------------------
-<sup>© 2020 Frontware International. All Rights Reserved.</sup>
+<sup>© 2020 Frontware International Co,Ltd. All Rights Reserved.</sup>
