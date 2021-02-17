@@ -14,12 +14,15 @@ import (
 	"golang.org/x/crypto/bcrypt"
 )
 
-//go:embed pwd.bf.gz
-var pwdBin []byte
+var (
+	bf *bloomfilter.Filter
 
-var bf *bloomfilter.Filter
+	//go:embed pwd.bf.gz
+	pwdBin []byte
+)
 
 func init() {
+	// Initialize bloom filter with list of passwords we get from embed pwd.bf.bz
 	r := bytes.NewReader(pwdBin)
 	bf, _, _ = bloomfilter.ReadFrom(r) // read the BF
 }
