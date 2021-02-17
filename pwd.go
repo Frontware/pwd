@@ -6,21 +6,21 @@ package pwd
 import (
 	"bytes"
 	"crypto/rand"
-	"io"
-
+	_ "embed"
 	"hash/fnv"
+	"io"
 
 	"github.com/steakknife/bloomfilter"
 	"golang.org/x/crypto/bcrypt"
 )
 
-//go:generate $GOPATH/bin/go-bindata -prefix "/tmp/" -nomemcopy -nometadata -nocompress -pkg pwd /tmp/pwd.bf.gz
+//go:embed pwd.bf.gz
+var pwdBin []byte
 
 var bf *bloomfilter.Filter
 
 func init() {
-	data, _ := pwdBfGzBytes()
-	r := bytes.NewReader(data)
+	r := bytes.NewReader(pwdBin)
 	bf, _, _ = bloomfilter.ReadFrom(r) // read the BF
 }
 
