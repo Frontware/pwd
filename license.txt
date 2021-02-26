@@ -1,5 +1,5 @@
     Golang Password library
-    Copyright (C) 2020  Frontware International Co., Ltd
+    Copyright (C) 2021 Frontware International Co., Ltd
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU Affero General Public License as
