@@ -21,7 +21,7 @@ const (
 	probCollide = 0.01
 )
 
-// generateBloom generates bloom file based on pwd.txt
+// GenerateBloom generates bloom file based on pwd.txt imported from 10 millions top pwd list.
 func GenerateBloom() {
 
 	list := "https://raw.githubusercontent.com/danielmiessler/SecLists/master/Passwords/Common-Credentials/10-million-password-list-top-1000000.txt"
