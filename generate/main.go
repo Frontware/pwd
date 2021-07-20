@@ -48,8 +48,9 @@ func GenerateBloom() {
 		// Add hash64 to bloom filter
 		bf.Add(h)
 	}
-	_, err = bf.WriteFile(bmFilePath)
-	fmt.Printf("File %s created\n", bmFilePath)
+	if _, err = bf.WriteFile(bmFilePath); err != nil {
+		fmt.Printf("File %s created\n", bmFilePath)
+	}
 }
 
 func main() {
