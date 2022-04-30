@@ -1,6 +1,6 @@
 module github.com/frontware/pwd
 
-go 1.16
+go 1.18
 
 require (
 	github.com/steakknife/bloomfilter v0.0.0-20180922174646-6819c0d2a570
